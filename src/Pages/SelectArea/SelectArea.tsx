@@ -9,7 +9,6 @@ const SelectArea = (props: SelectAreaProps) => {
       <div>header here</div>
       <div className="border-2 border-lime-300 w-56 h-56">
         <Map
-        accessToken=""
           mapboxAccessToken={import.meta.env.VITE_MAPBOX_GL_TOKEN}
           mapLib={mapbox}
           initialViewState={{
