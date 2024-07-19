@@ -1,14 +1,16 @@
 type SelectAreaProps = {};
 import Map from "react-map-gl";
 import mapbox from "mapbox-gl";
+import { log } from "console";
 
 const SelectArea = (props: SelectAreaProps) => {
   return (
     <div className="flex flex-col justify-between">
       <div>header here</div>
-      <div>
+      <div className="border-2 border-lime-300 w-56 h-56">
         <Map
-          // accessToken={import.meta.env.VITE_MAPBOX_GL_TOKEN}
+        accessToken=""
+          mapboxAccessToken={import.meta.env.VITE_MAPBOX_GL_TOKEN}
           mapLib={mapbox}
           initialViewState={{
             longitude: -100,
