@@ -1,4 +1,4 @@
 node_modules
-output.css
+/src/output.css
 
 .env.local
